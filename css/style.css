@@ -1,0 +1,63 @@
+html,body
+{
+    margin: 0%;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+.squere
+{
+
+    height: 40%;
+    width: 20%;
+    transform: translate(120%,20%);
+    background-color: plum;
+}
+.squere:hover
+{
+    /*transition-property:all;*/
+    /*transition-timing-function:ease-out;*/
+    transition-duration:2s;
+    transform: rotate(180deg);
+    transform-origin:right;
+
+
+    /*perspective-origin:2px;*/
+    /*transform-origin: revert;*/
+}
+.squere1
+{
+
+    height: 40%;
+    width: 20%;
+    transform: translate(250%,-80%);
+    background-color: palevioletred;
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+
+}
+/*.squere1:hover {*/
+    /*!*transition-property:all;*!*/
+    /*!*transition-timing-function:ease-out;*!*/
+    /*transition-duration: 2s;*/
+    /*transform: rotate(180deg);*/
+    /*transform-origin:center;*/
+/*}*/
+
+@keyframes example1 {
+
+    0%
+    {
+        background-color: paleturquoise;
+    }
+    50%
+    {
+        background-color: rebeccapurple;
+    }
+    75%
+    {
+        background-color: aqua;
+    }
+}
